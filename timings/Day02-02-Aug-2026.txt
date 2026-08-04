@@ -1,0 +1,162 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 02 | 02-Aug-2026
+Topic: Linux Fundamentals
+--------------------------------------------------------
+
+# What I did today
+
+- Attended the Linux Fundamentals live session conducted by PathNex.
+- Understood why Linux is the preferred operating system in DevOps and Cloud environments.
+- Learned the difference between CLI (Command Line Interface) and GUI (Graphical User Interface).
+- Practiced directory navigation and basic file operations.
+- Learned about hidden files and directories in Linux.
+- Understood Linux file permissions and permission calculation using octal values.
+- Learned the difference between Hard Links and Soft Links (Symbolic Links).
+- Understood how to launch an AWS EC2 instance and connect to it securely using SSH.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+## Linux Basics
+
+- Linux is an open-source operating system widely used in servers and cloud environments.
+- DevOps engineers primarily work through the Command Line Interface (CLI) instead of a GUI.
+- CLI enables faster execution, automation, remote administration, and consumes fewer system resources.
+
+--------------------------------------------------------
+
+## Linux Directory Navigation
+
+Learned how to navigate directories using:
+
+- Current Working Directory
+- Parent Directory (..)
+- Multiple directory traversal
+- Hidden files beginning with '.'
+
+--------------------------------------------------------
+
+## File Permissions
+
+Understood Linux permission structure:
+
+Owner (User)
+Group
+Others
+
+Permission Values
+
+Read (r)      = 4
+Write (w)     = 2
+Execute (x)   = 1
+
+Examples
+
+7 = rwx
+6 = rw-
+5 = r-x
+4 = r--
+
+--------------------------------------------------------
+
+## Hard Link vs Soft Link
+
+Hard Link
+- Points directly to the inode.
+- Remains valid even if the original filename is deleted.
+- Increases the file's link count.
+
+Soft Link (Symbolic Link)
+- Acts like a shortcut.
+- Points to the file path.
+- Breaks if the original file is deleted or renamed.
+
+--------------------------------------------------------
+
+## AWS EC2 & SSH
+
+Learned the basic workflow:
+
+- Launch Amazon Linux EC2 instance
+- Download PEM key
+- Allow Port 22 (SSH)
+- Connect using SSH from Terminal
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+Directory Navigation
+
+pwd
+cd
+cd ..
+cd ../..
+ls
+ls -l
+ls -la
+ls -lh
+ls -lt
+ls -lS
+ls -ltr
+
+File Operations
+
+mkdir
+touch
+mv
+rm
+rm -r
+rm -rf
+cat
+
+Vim
+
+vim
+i
+Esc :wq
+Esc :q!
+
+Permissions
+
+chmod
+chmod +r
+chmod +x
+
+Links
+
+ln
+ln -s
+
+System Commands
+
+whoami
+date
+
+Remote Access
+
+ssh -i key.pem ec2-user@public-ip
+exit
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- Linux CLI is one of the most important skills for every DevOps Engineer.
+- Understanding the Linux file system is essential before learning advanced DevOps tools.
+- File permissions are critical for securing Linux systems.
+- Hard Links and Soft Links behave differently and are commonly asked in interviews.
+- SSH is the standard method for managing remote Linux servers.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Practice all Linux commands covered today.
+- Revise file permissions and chmod.
+- Practice creating Hard Links and Soft Links.
+- Continue Linux hands-on exercises.
+
+--------------------------------------------------------

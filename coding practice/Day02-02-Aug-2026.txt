@@ -1,0 +1,62 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 02 | 02-Aug-2026
+--------------------------------------------------------
+
+# Practice Completed
+
+Today's practice focused on Linux command-line operations instead of programming.
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+pwd
+cd
+ls
+ls -l
+ls -la
+mkdir
+touch
+mv
+rm
+cat
+vim
+chmod
+ln
+ln -s
+whoami
+date
+ssh
+
+--------------------------------------------------------
+
+# Hands-on Tasks
+
+- Navigated between multiple directories.
+- Created and removed files/directories.
+- Edited files using Vim.
+- Practiced Linux permissions using chmod.
+- Created Hard Links and Soft Links.
+- Connected to a remote Linux server using SSH.
+
+--------------------------------------------------------
+
+# Concepts Revised
+
+- CLI vs GUI
+- Linux Directory Structure
+- Hidden Files
+- File Permissions
+- Hard Link vs Soft Link
+- AWS EC2 SSH Connection
+
+--------------------------------------------------------
+
+# Tomorrow's Coding Goal
+
+- Continue Linux practice.
+- Learn advanced Linux commands.
+- Strengthen command-line proficiency.
+
+--------------------------------------------------------

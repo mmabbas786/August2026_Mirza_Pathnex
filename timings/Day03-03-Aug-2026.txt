@@ -1,0 +1,149 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 03 | 03-Aug-2026
+Topic: Linux Fundamentals - Class 2
+--------------------------------------------------------
+
+# What I did today
+
+- Attended Linux Class 2 conducted by PathNex.
+- Learned advanced Linux file system concepts and directory navigation.
+- Understood Relative Path vs Absolute Path with practical examples.
+- Practiced Linux monitoring and disk usage commands.
+- Learned file searching techniques using the find command.
+- Understood Inodes and how inode exhaustion can cause "No space left on device" errors.
+- Learned basic Linux troubleshooting scenarios commonly faced in production environments.
+- Understood package management and service management workflow in Linux.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+## Linux File System
+
+- Difference between Relative Path and Absolute Path.
+- Importance of verifying the current working directory before executing commands.
+- Best practice: Always use pwd before performing file operations.
+
+--------------------------------------------------------
+
+## System Monitoring
+
+Learned how to monitor:
+
+- CPU Usage
+- Load Average
+- Memory Usage
+- Disk Usage
+- Inode Usage
+
+--------------------------------------------------------
+
+## File Searching
+
+Learned how to search files using:
+
+- find command
+- Wildcards (*)
+- Case-insensitive search (-iname)
+
+--------------------------------------------------------
+
+## Package Management
+
+Learned enterprise package installation workflow:
+
+1. Install package
+2. Enable service
+3. Start service
+
+Example:
+
+yum install <package>
+
+systemctl enable <service>
+
+systemctl start <service>
+
+--------------------------------------------------------
+
+## Real-world Troubleshooting
+
+Learned how to troubleshoot:
+
+- Disk Full issues
+- Inode Exhaustion
+- SSH Key path problems
+- Service startup failures
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+Navigation
+
+pwd
+cd
+mkdir
+rm -r
+rmdir
+
+File Viewing
+
+ls
+ls -la
+cat
+head
+head -n 5
+tail
+tail -n 5
+tail -f
+
+File Operations
+
+touch
+vi
+
+Permissions
+
+chmod
+chown
+
+System Monitoring
+
+top
+df -h
+df -i
+du -sh *
+free -m
+free -h
+
+Searching
+
+find
+find -iname
+
+Advanced Command
+
+find . -type f -exec du -sh {} + | sort -rh | head -n 10
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- Always verify your current directory using pwd before executing destructive commands.
+- Understanding Inodes is essential for troubleshooting Linux servers.
+- Monitoring CPU, Memory, and Disk usage is a core responsibility of DevOps Engineers.
+- Real-world troubleshooting skills are more valuable than memorizing commands.
+- Communication and explaining the troubleshooting process clearly are important during interviews.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Continue Linux hands-on practice.
+- Practice monitoring commands.
+- Revise find, df, du, and free commands.
+- Learn Linux users, groups, and SSH in the next class.
+
+--------------------------------------------------------
