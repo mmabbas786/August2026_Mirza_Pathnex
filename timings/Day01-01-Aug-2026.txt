@@ -1,0 +1,88 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 01 | 01-Aug-2026
+Topic: DevOps Roadmap 2026
+--------------------------------------------------------
+
+# What I did today
+
+- Attended the PathNex DevOps Roadmap 2026 orientation session.
+- Understood the complete learning path that will be followed throughout the course.
+- Created my GitHub repository for daily progress tracking.
+- Created the required project structure:
+  - timings/
+  - coding practice/
+- Understood the daily workflow of creating branches, committing changes, pushing to GitHub, creating Pull Requests, and merging them.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+## Goal of the Roadmap
+
+- Build job-ready DevOps skills from scratch.
+- Create a strong GitHub portfolio with daily updates and projects.
+- Prepare for DevOps interviews using real-world tools and workflows.
+- Become confident in Cloud, CI/CD, Containers, Kubernetes, Infrastructure as Code (IaC), Observability, Security, and SRE. :contentReference[oaicite:0]{index=0}
+
+## DevOps Learning Roadmap
+
+### Phase 1 - Foundations
+- Linux
+- Git
+
+### Phase 2 - Cloud Fundamentals
+- AWS Core Services
+
+### Phase 3 - Containerization & Orchestration
+- Docker
+- Kubernetes
+- Helm
+- Argo CD
+
+### Phase 4 - Infrastructure as Code
+- Terraform
+- Ansible
+
+### Phase 5 - CI/CD
+- GitLab
+- Jenkins
+
+### Phase 6 - Monitoring & Observability
+- DataDog
+- ELK Stack
+
+### Phase 7 - Messaging & Streaming
+- Kafka
+
+### Phase 8 - Security & Reliability
+- SSL Certificates
+- Site Reliability Engineering (SRE)
+- Security Tools (SonarQube, OWASP ZAP, Trivy, Aqua, Anchore) :contentReference[oaicite:1]{index=1}
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+No Linux commands were covered during today's roadmap session.
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- DevOps is a combination of Development, Operations, Automation, Cloud, Security, and Monitoring.
+- Linux and Git form the foundation of the entire roadmap.
+- Consistent practice and GitHub documentation are essential throughout the course.
+- Hands-on implementation is more important than theory alone.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Start Linux Fundamentals.
+- Learn basic Linux commands.
+- Understand the Linux file system.
+- Practice every command demonstrated during the class.
+- Update GitHub with Day 02 progress.
+
+--------------------------------------------------------

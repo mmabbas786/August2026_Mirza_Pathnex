@@ -1,0 +1,43 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 01 | 01-Aug-2026
+--------------------------------------------------------
+
+# Problems Solved
+
+No coding problems were assigned today.
+
+--------------------------------------------------------
+
+# Practice Completed
+
+- Created the PathNex GitHub repository.
+- Created the required folder structure.
+- Understood the daily Git workflow.
+- Prepared the repository for future coding practice.
+
+--------------------------------------------------------
+
+# Concepts Learned
+
+- Importance of maintaining a GitHub portfolio.
+- Daily documentation workflow.
+- Overview of the complete DevOps Roadmap.
+- Learning strategy for becoming a DevOps Engineer.
+
+--------------------------------------------------------
+
+# Commands Used
+
+GitHub setup only.
+No Linux commands practiced today.
+
+--------------------------------------------------------
+
+# Tomorrow's Coding Goal
+
+- Start Linux command practice.
+- Perform hands-on terminal exercises.
+- Continue maintaining daily GitHub updates.
+
+--------------------------------------------------------

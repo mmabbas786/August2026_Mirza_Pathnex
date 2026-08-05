@@ -1,0 +1,64 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 04 | 04-Aug-2026
+--------------------------------------------------------
+
+# Practice Completed
+
+Today's practice focused on Linux administration, user management, SSH configuration, and file permissions.
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+hostname
+lscpu
+cat /etc/passwd
+getent passwd
+who
+useradd
+passwd
+id
+usermod
+ssh-keygen
+ssh
+systemctl
+chown
+chgrp
+umask
+df -h
+sed
+cp
+tar
+
+--------------------------------------------------------
+
+# Hands-on Tasks
+
+- Created and managed Linux users.
+- Configured SSH authentication.
+- Explored file ownership and permissions.
+- Practiced umask calculations.
+- Created and extracted compressed archives.
+- Reviewed production best practices for Linux administration.
+
+--------------------------------------------------------
+
+# Concepts Revised
+
+- User & Group Management
+- SSH Authentication
+- Bastion Host
+- File Ownership
+- Umask
+- Archiving & Compression
+
+--------------------------------------------------------
+
+# Tomorrow's Coding Goal
+
+- Continue Linux hands-on practice.
+- Strengthen user and permission management concepts.
+- Prepare for the next DevOps module.
+
+--------------------------------------------------------

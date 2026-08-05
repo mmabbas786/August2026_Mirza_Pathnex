@@ -1,0 +1,64 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 03 | 03-Aug-2026
+--------------------------------------------------------
+
+# Practice Completed
+
+Today's practice focused on Linux system administration and troubleshooting commands.
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+pwd
+cd
+ls
+ls -la
+cat
+head
+tail
+touch
+vi
+chmod
+chown
+top
+df -h
+df -i
+du -sh *
+free -h
+find
+find -iname
+
+--------------------------------------------------------
+
+# Hands-on Tasks
+
+- Practiced directory navigation.
+- Checked disk usage.
+- Monitored CPU and memory.
+- Explored inode usage.
+- Searched files using find.
+- Practiced Linux troubleshooting scenarios.
+
+--------------------------------------------------------
+
+# Concepts Revised
+
+- Relative vs Absolute Path
+- CPU Load Average
+- Disk Usage
+- Inodes
+- Linux Monitoring
+- Package Management
+- Linux Troubleshooting
+
+--------------------------------------------------------
+
+# Tomorrow's Coding Goal
+
+- Learn Linux user management.
+- Practice SSH commands.
+- Continue Linux command-line exercises.
+
+--------------------------------------------------------

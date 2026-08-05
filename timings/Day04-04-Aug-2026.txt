@@ -1,0 +1,153 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 04 | 04-Aug-2026
+Topic: Linux Fundamentals - Class 3
+--------------------------------------------------------
+
+# What I did today
+
+- Attended Linux Class 3 conducted by PathNex.
+- Learned Linux user and group management.
+- Understood the principle of least privilege and why normal users should be used instead of logging in as root.
+- Practiced user creation, password management, and granting sudo access.
+- Learned SSH password authentication and password-less (key-based) authentication.
+- Understood the Bastion Host (Jump Server) architecture used in production environments.
+- Learned file ownership, group ownership, and default file permissions using umask.
+- Practiced file archiving and compression using tar.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+## Linux User Management
+
+- Difference between root user and normal users.
+- Creating users and assigning passwords.
+- Managing user groups.
+- Granting administrative (sudo) privileges.
+
+--------------------------------------------------------
+
+## SSH Authentication
+
+Learned two authentication methods:
+
+- Password Authentication
+- SSH Key-Based Authentication
+
+Also learned how to:
+
+- Generate SSH keys.
+- Configure authorized_keys.
+- Connect to remote Linux servers securely.
+
+--------------------------------------------------------
+
+## Bastion Host
+
+- Understood the purpose of a Bastion (Jump) Host.
+- Learned how organizations securely access private servers through a single entry point.
+
+--------------------------------------------------------
+
+## File Ownership & Permissions
+
+Learned:
+
+- File ownership
+- Group ownership
+- chown
+- chgrp
+- Default permissions using umask
+
+Understood that:
+
+- Files start with base permission 666.
+- Directories start with base permission 777.
+- Umask removes permissions from the default values.
+
+--------------------------------------------------------
+
+## File Archiving
+
+Learned how to:
+
+- Create compressed archives.
+- Extract archived files.
+
+--------------------------------------------------------
+
+# Commands Practiced
+
+System Information
+
+hostname
+lscpu
+
+User Management
+
+cat /etc/passwd
+getent passwd
+getent passwd | wc -l
+who
+sudo useradd <username>
+sudo passwd <username>
+id <username>
+sudo usermod -aG wheel <username>
+
+SSH
+
+ssh-keygen -t ed25519 -C "august-batch"
+ssh <username>@<server-ip>
+
+Service Management
+
+sudo systemctl restart sshd
+
+Ownership
+
+sudo chown <username> <filename>
+sudo chown <username>:<groupname> <filename>
+sudo chown <username>: <filename>
+sudo chgrp <groupname> <filename>
+
+Permissions
+
+umask
+umask 041
+
+Disk Usage
+
+df -h
+
+File Editing
+
+sed -i '$r filename' filename
+cp app.conf app.conf.bak_$(date +%F)
+
+Archiving
+
+tar -cvzf app.tar.gz app
+tar -xvzf app.tar.gz
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- Always work as a normal user and use sudo only when required.
+- SSH key-based authentication is more secure than password authentication.
+- Bastion Hosts improve infrastructure security.
+- Understanding file ownership and umask is essential for Linux administration.
+- Always create a backup before modifying important configuration files.
+- Regularly stop or terminate unused AWS resources to avoid unnecessary costs.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Practice Linux user management.
+- Configure SSH key authentication on an EC2 instance.
+- Revise file ownership and umask.
+- Practice tar and file archiving commands.
+
+--------------------------------------------------------
