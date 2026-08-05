@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 August2026_Mirza_Pathnex
+#  August2026_Mirza_Pathnex
 
 ### My DevOps Learning Journey with PathNex
 
