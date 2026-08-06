@@ -1,18 +1,11 @@
+
 <div align="center">
 
-<<<<<<< HEAD
-#  August2026_Mirza_Pathnex
-
-### My DevOps Learning Journey with PathNex
-
-Documenting my daily learning, hands-on practice, Linux commands, coding exercises, Bash scripting, and DevOps concepts throughout the PathNex DevOps Program.
-=======
 # 🚀 August2026_Mirza_Pathnex
 
 ### My DevOps Learning Journey with PathNex
 
-Documenting my daily learning, hands-on practice, Linux commands, coding exercises, and DevOps concepts throughout the PathNex DevOps Program.
->>>>>>> origin/main
+Documenting my daily learning, hands-on practice, Linux commands, coding exercises, Bash scripting, Git & GitHub, and DevOps concepts throughout the PathNex DevOps Program.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/mmabbas786/August2026_Mirza_Pathnex)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmabbas786/August2026_Mirza_Pathnex)
@@ -25,91 +18,50 @@ Documenting my daily learning, hands-on practice, Linux commands, coding exercis
 
 # 📖 About This Repository
 
-<<<<<<< HEAD
 This repository documents my daily learning journey through the **PathNex DevOps Program**.
 
-Each day includes:
+Each day I maintain:
 
-- 📚 Concepts learned
-- 💻 Linux commands practiced
-- 🖥 Bash scripting concepts
-- ☁️ DevOps tools and technologies
-- 🛠 Hands-on practice
+- 📚 Technical notes
+- 💻 Linux commands
+- 🖥️ Bash scripting
+- 🌿 Git & GitHub
+- ☁️ DevOps tools
+- 🛠️ Hands-on practice
 - 📝 Daily learning journal
 - 🎯 Interview preparation notes
-
-The objective is to build strong DevOps fundamentals while maintaining a public portfolio that showcases my consistency, practical learning, and continuous improvement.
-=======
-This repository serves as my daily learning journal for the **PathNex DevOps Program**.
-
-Every day I document:
-
-- 📚 Concepts learned
-- 💻 Linux commands practiced
-- 🛠 Hands-on exercises
-- 🧠 DevOps interview concepts
-- 📂 Coding practice
-- 📝 Daily progress
-
-The objective is to maintain consistent learning while building a public portfolio showcasing my DevOps journey.
->>>>>>> origin/main
 
 ---
 
 # 🎯 Learning Goals
 
 - Master Linux Administration
-<<<<<<< HEAD
-- Become proficient in Bash Scripting
-- Learn Git & GitHub workflows
-- Build Cloud skills with AWS
-- Understand Docker & Kubernetes
-- Learn Infrastructure as Code (Terraform & Ansible)
-- Implement CI/CD Pipelines
-- Explore Monitoring & Logging
-- Strengthen DevOps Interview Preparation
-- Build Production-ready DevOps Projects
-=======
-- Learn Git & GitHub workflows
-- Build Cloud skills with AWS
-- Understand Docker & Kubernetes
-- Learn Infrastructure as Code
-- Implement CI/CD pipelines
-- Explore Monitoring & Logging
-- Strengthen DevOps interview preparation
-- Build production-ready projects
->>>>>>> origin/main
+- Master Bash Scripting
+- Master Git & GitHub
+- Learn AWS
+- Learn Docker & Kubernetes
+- Learn Terraform & Ansible
+- Build CI/CD Pipelines
+- Learn Monitoring & Logging
+- Build Production Ready DevOps Projects
 
 ---
 
 # 🗂 Repository Structure
 
-```
+```text
 August2026_Mirza_Pathnex
 │
 ├── README.md
-│
 ├── timings
 │   ├── Day01-01-Aug-2026.txt
-│   ├── Day02-02-Aug-2026.txt
-│   ├── Day03-03-Aug-2026.txt
-│   ├── Day04-04-Aug-2026.txt
-<<<<<<< HEAD
-│   ├── Day05-05-Aug-2026.txt
-=======
->>>>>>> origin/main
-│   └── ...
+│   ├── ...
+│   └── Day06-06-Aug-2026.txt
 │
 └── coding practice
     ├── Day01-01-Aug-2026.txt
-    ├── Day02-02-Aug-2026.txt
-    ├── Day03-03-Aug-2026.txt
-    ├── Day04-04-Aug-2026.txt
-<<<<<<< HEAD
-    ├── Day05-05-Aug-2026.txt
-=======
->>>>>>> origin/main
-    └── ...
+    ├── ...
+    └── Day06-06-Aug-2026.txt
 ```
 
 ---
@@ -117,271 +69,139 @@ August2026_Mirza_Pathnex
 # 📅 Learning Progress
 
 | Day | Date | Topic | Status |
-<<<<<<< HEAD
 |------|------|----------------------------------------------|--------|
-=======
-|------|------|-------|--------|
->>>>>>> origin/main
 | 01 | 01-Aug-2026 | DevOps Roadmap | ✅ |
 | 02 | 02-Aug-2026 | Linux Fundamentals | ✅ |
 | 03 | 03-Aug-2026 | Linux Fundamentals - Class 2 | ✅ |
 | 04 | 04-Aug-2026 | Linux Fundamentals - Class 3 | ✅ |
-<<<<<<< HEAD
 | 05 | 05-Aug-2026 | Linux Process Management, Terraform & Bash Scripting | ✅ |
+| 06 | 06-Aug-2026 | Git & GitHub Complete Course | ✅ |
 
 ---
 
 # 📊 Repository Progress
 
-| Category | Progress |
-|----------|----------|
-| Days Completed | 05 |
-| Coding Practice Files | 05 |
-| Timing Reports | 05 |
-| Linux Classes Completed | 04 |
-| Bash Scripting Sessions | 01 |
-| GitHub Updates | 05 |
+| Category | Count |
+|----------|------:|
+| Days Completed | 06 |
+| Coding Practice Files | 06 |
+| Timing Reports | 06 |
+| Linux Classes | 04 |
+| Bash Sessions | 01 |
+| Git & GitHub Sessions | 01 |
 
 ---
 
 # 💻 Skills Learned So Far
 
 ## Linux
-
 - Linux File System
 - Users & Permissions
 - File Management
 - Process Management
-- System Monitoring
 - Networking Basics
-- grep & Text Processing
-- Shell Variables
+- System Monitoring
+- grep
 - Cron Jobs
-- Linux Runlevels
+- Runlevels
 
----
-
-## Bash Scripting
-
-- Shebang (`#!/bin/bash`)
+## Bash
+- Shebang
 - Variables
-- Comments
+- Loops
+- Conditions
 - Positional Parameters
-- Input & Output Redirection
-- Conditional Statements
-- For Loops
-- Script Execution
-- Process Monitoring Scripts
+- Redirection
 
----
+## Git & GitHub
+- Git Installation
+- Git Configuration
+- Repository Management
+- Branching
+- Commit Workflow
+- Remote Repositories
+- Pull Requests
+- Merge Conflicts
+- SSH Authentication
 
 ## Infrastructure as Code
-
-- Terraform Init
-- Terraform Plan
-- Terraform Apply
-- Terraform Destroy
-
----
-
-## Version Control
-
-- Git
-- GitHub
-- Branching
-- Pull Requests
-=======
->>>>>>> origin/main
+- Terraform Basics
 
 ---
 
 # 🛠 Technologies Covered
 
-<<<<<<< HEAD
-### Operating System
-
 - Linux
-
-### Scripting
-
 - Bash
-
-### Infrastructure as Code
-
-- Terraform
-
-### Version Control
-=======
-## Operating Systems
-
-- Linux
-
-## Version Control
->>>>>>> origin/main
-
 - Git
 - GitHub
+- Terraform (Basics)
 
-<<<<<<< HEAD
-### Cloud
-
-- AWS (Learning)
-
-### DevOps Tools (Upcoming)
-=======
-## Cloud
+### Upcoming
 
 - AWS
-
-## DevOps
->>>>>>> origin/main
-
 - Docker
 - Kubernetes
 - Helm
 - Argo CD
-<<<<<<< HEAD
 - Jenkins
 - GitLab CI
 - Ansible
-
-### Monitoring (Upcoming)
-=======
-- Terraform
-- Ansible
-- Jenkins
-- GitLab CI
-
-## Monitoring
->>>>>>> origin/main
-
 - DataDog
 - ELK Stack
-
-<<<<<<< HEAD
-### Messaging (Upcoming)
-=======
-## Messaging
->>>>>>> origin/main
-
 - Kafka
 
 ---
 
 # 📚 Current Learning Path
 
-<<<<<<< HEAD
 | Module | Status |
 |---------|--------|
-| DevOps Roadmap | ✅ Completed |
-| Linux Basics | ✅ Completed |
-| Linux Administration | 🔄 In Progress |
-| Bash Scripting | 🔄 In Progress |
-| Git & GitHub | ⏳ Upcoming |
-| AWS | ⏳ Upcoming |
-| Docker | ⏳ Upcoming |
-| Kubernetes | ⏳ Upcoming |
-| Terraform | 🔄 Basics Completed |
-| Jenkins | ⏳ Upcoming |
-| Monitoring | ⏳ Upcoming |
-| CI/CD | ⏳ Upcoming |
-| DevOps Projects | ⏳ Upcoming |
+| DevOps Roadmap | ✅ |
+| Linux | ✅ |
+| Bash Scripting | ✅ |
+| Git & GitHub | ✅ |
+| Terraform Basics | ✅ |
+| AWS | ⏳ |
+| Docker | ⏳ |
+| Kubernetes | ⏳ |
+| Jenkins | ⏳ |
+| CI/CD | ⏳ |
 
 ---
 
 # 📈 Learning Workflow
-=======
-- ✅ DevOps Roadmap
-- ✅ Linux Basics
-- 🔄 Linux Administration
-- ⏳ Git & GitHub
-- ⏳ AWS
-- ⏳ Docker
-- ⏳ Kubernetes
-- ⏳ Terraform
-- ⏳ Jenkins
-- ⏳ Monitoring
-- ⏳ CI/CD
-- ⏳ DevOps Projects
 
----
-
-# 📈 Workflow Followed
->>>>>>> origin/main
-
-```
+```text
 Attend Class
-      │
-      ▼
-<<<<<<< HEAD
+    ↓
 Understand Concepts
-      │
-      ▼
+    ↓
 Practice Commands
-      │
-      ▼
-Perform Hands-on Practice
-      │
-      ▼
+    ↓
+Hands-on Practice
+    ↓
 Document Learning
-      │
-      ▼
-Update GitHub
-=======
-Practice Commands
-      │
-      ▼
-Document Learning
-      │
-      ▼
-Git Commit
-      │
-      ▼
+    ↓
+Commit Changes
+    ↓
 Push Branch
->>>>>>> origin/main
-      │
-      ▼
+    ↓
 Create Pull Request
-      │
-      ▼
-<<<<<<< HEAD
-Review & Merge
-      │
-      ▼
-Repeat Daily 🚀
-=======
-Review by PathNex
-      │
-      ▼
+    ↓
 Merge
->>>>>>> origin/main
 ```
 
 ---
 
-<<<<<<< HEAD
 # 📌 Daily Routine
 
-- 📺 Attend PathNex Live Class
-- 🧠 Learn New Concepts
-- 💻 Practice Linux & DevOps Commands
-- ☁️ Perform Hands-on Exercises
-- 📝 Update Coding Practice Notes
-- ⏱ Record Daily Learning Timings
-- 🚀 Push Changes to GitHub
-- 🔄 Create Pull Request
-- 📚 Revise Previous Topics
-=======
-# 📌 Daily Workflow
-
-- Attend live PathNex class.
-- Perform hands-on practice.
-- Document concepts and commands.
-- Update GitHub repository.
-- Create Pull Request.
-- Receive mentor review.
-- Continue learning consistently.
->>>>>>> origin/main
+- Attend PathNex class
+- Practice on Linux/EC2
+- Document learning
+- Update GitHub
+- Create Pull Request
+- Revise previous topics
 
 ---
 
@@ -389,11 +209,7 @@ Merge
 
 **Mirza Mehedi Abbas**
 
-<<<<<<< HEAD
-Computer Science Engineer | Aspiring DevOps Engineer | Software Engineer
-=======
-Computer Science Engineer | DevOps Learner | Software Engineer
->>>>>>> origin/main
+Computer Science Engineer | Aspiring DevOps Engineer
 
 - 🌐 GitHub: https://github.com/mmabbas786
 - 💼 LinkedIn: https://www.linkedin.com/in/mirzamehediabbas/
@@ -402,26 +218,15 @@ Computer Science Engineer | DevOps Learner | Software Engineer
 
 # ⭐ Acknowledgement
 
-<<<<<<< HEAD
-A special thanks to the **PathNex Team** for providing structured DevOps training, practical sessions, mentorship, and hands-on learning opportunities throughout this journey.
-=======
-Special thanks to the **PathNex Team** for providing structured DevOps training, practical sessions, and mentorship throughout this learning journey.
->>>>>>> origin/main
+Special thanks to the **PathNex Team** for the structured DevOps training, mentorship, and hands-on learning.
 
 ---
 
 <div align="center">
 
-<<<<<<< HEAD
-## 🚀 Learning Never Stops
+## 🚀 Learn • Practice • Document • Improve • Repeat
 
-**Learn • Practice • Document • Improve • Repeat**
-
-⭐ Thank you for visiting my repository!
-=======
-### ⭐ Consistency beats intensity.
-
-**Learning • Building • Documenting • Improving**
->>>>>>> origin/main
+⭐ Thanks for visiting my repository!
 
 </div>
+
