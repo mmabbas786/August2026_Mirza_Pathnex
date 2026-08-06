@@ -1,11 +1,10 @@
-
 <div align="center">
 
 # 🚀 August2026_Mirza_Pathnex
 
 ### My DevOps Learning Journey with PathNex
 
-Documenting my daily learning, hands-on practice, Linux commands, coding exercises, Bash scripting, Git & GitHub, and DevOps concepts throughout the PathNex DevOps Program.
+Documenting my daily learning, hands-on practice, Linux commands, coding exercises, and DevOps concepts throughout the PathNex DevOps Program.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/mmabbas786/August2026_Mirza_Pathnex)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mmabbas786/August2026_Mirza_Pathnex)
@@ -18,50 +17,55 @@ Documenting my daily learning, hands-on practice, Linux commands, coding exercis
 
 # 📖 About This Repository
 
-This repository documents my daily learning journey through the **PathNex DevOps Program**.
+This repository serves as my daily learning journal for the **PathNex DevOps Program**.
 
-Each day I maintain:
+Every day I document:
 
-- 📚 Technical notes
-- 💻 Linux commands
-- 🖥️ Bash scripting
-- 🌿 Git & GitHub
-- ☁️ DevOps tools
-- 🛠️ Hands-on practice
-- 📝 Daily learning journal
-- 🎯 Interview preparation notes
+- 📚 Concepts learned
+- 💻 Linux commands practiced
+- 🛠 Hands-on exercises
+- 🧠 DevOps interview concepts
+- 📂 Coding practice
+- 📝 Daily progress
+
+The objective is to maintain consistent learning while building a public portfolio showcasing my DevOps journey.
 
 ---
 
 # 🎯 Learning Goals
 
 - Master Linux Administration
-- Master Bash Scripting
-- Master Git & GitHub
-- Learn AWS
-- Learn Docker & Kubernetes
-- Learn Terraform & Ansible
-- Build CI/CD Pipelines
-- Learn Monitoring & Logging
-- Build Production Ready DevOps Projects
+- Learn Git & GitHub workflows
+- Build Cloud skills with AWS
+- Understand Docker & Kubernetes
+- Learn Infrastructure as Code
+- Implement CI/CD pipelines
+- Explore Monitoring & Logging
+- Strengthen DevOps interview preparation
+- Build production-ready projects
 
 ---
 
 # 🗂 Repository Structure
 
-```text
+```
 August2026_Mirza_Pathnex
 │
 ├── README.md
+│
 ├── timings
 │   ├── Day01-01-Aug-2026.txt
-│   ├── ...
-│   └── Day06-06-Aug-2026.txt
+│   ├── Day02-02-Aug-2026.txt
+│   ├── Day03-03-Aug-2026.txt
+│   ├── Day04-04-Aug-2026.txt
+│   └── ...
 │
 └── coding practice
     ├── Day01-01-Aug-2026.txt
-    ├── ...
-    └── Day06-06-Aug-2026.txt
+    ├── Day02-02-Aug-2026.txt
+    ├── Day03-03-Aug-2026.txt
+    ├── Day04-04-Aug-2026.txt
+    └── ...
 ```
 
 ---
@@ -69,139 +73,106 @@ August2026_Mirza_Pathnex
 # 📅 Learning Progress
 
 | Day | Date | Topic | Status |
-|------|------|----------------------------------------------|--------|
+|------|------|-------|--------|
 | 01 | 01-Aug-2026 | DevOps Roadmap | ✅ |
 | 02 | 02-Aug-2026 | Linux Fundamentals | ✅ |
 | 03 | 03-Aug-2026 | Linux Fundamentals - Class 2 | ✅ |
 | 04 | 04-Aug-2026 | Linux Fundamentals - Class 3 | ✅ |
-| 05 | 05-Aug-2026 | Linux Process Management, Terraform & Bash Scripting | ✅ |
-| 06 | 06-Aug-2026 | Git & GitHub Complete Course | ✅ |
-
----
-
-# 📊 Repository Progress
-
-| Category | Count |
-|----------|------:|
-| Days Completed | 06 |
-| Coding Practice Files | 06 |
-| Timing Reports | 06 |
-| Linux Classes | 04 |
-| Bash Sessions | 01 |
-| Git & GitHub Sessions | 01 |
-
----
-
-# 💻 Skills Learned So Far
-
-## Linux
-- Linux File System
-- Users & Permissions
-- File Management
-- Process Management
-- Networking Basics
-- System Monitoring
-- grep
-- Cron Jobs
-- Runlevels
-
-## Bash
-- Shebang
-- Variables
-- Loops
-- Conditions
-- Positional Parameters
-- Redirection
-
-## Git & GitHub
-- Git Installation
-- Git Configuration
-- Repository Management
-- Branching
-- Commit Workflow
-- Remote Repositories
-- Pull Requests
-- Merge Conflicts
-- SSH Authentication
-
-## Infrastructure as Code
-- Terraform Basics
 
 ---
 
 # 🛠 Technologies Covered
 
+## Operating Systems
+
 - Linux
-- Bash
+
+## Version Control
+
 - Git
 - GitHub
-- Terraform (Basics)
 
-### Upcoming
+## Cloud
 
 - AWS
+
+## DevOps
+
 - Docker
 - Kubernetes
 - Helm
 - Argo CD
+- Terraform
+- Ansible
 - Jenkins
 - GitLab CI
-- Ansible
+
+## Monitoring
+
 - DataDog
 - ELK Stack
+
+## Messaging
+
 - Kafka
 
 ---
 
 # 📚 Current Learning Path
 
-| Module | Status |
-|---------|--------|
-| DevOps Roadmap | ✅ |
-| Linux | ✅ |
-| Bash Scripting | ✅ |
-| Git & GitHub | ✅ |
-| Terraform Basics | ✅ |
-| AWS | ⏳ |
-| Docker | ⏳ |
-| Kubernetes | ⏳ |
-| Jenkins | ⏳ |
-| CI/CD | ⏳ |
+- ✅ DevOps Roadmap
+- ✅ Linux Basics
+- 🔄 Linux Administration
+- ⏳ Git & GitHub
+- ⏳ AWS
+- ⏳ Docker
+- ⏳ Kubernetes
+- ⏳ Terraform
+- ⏳ Jenkins
+- ⏳ Monitoring
+- ⏳ CI/CD
+- ⏳ DevOps Projects
 
 ---
 
-# 📈 Learning Workflow
+# 📈 Workflow Followed
 
-```text
+```
 Attend Class
-    ↓
-Understand Concepts
-    ↓
+      │
+      ▼
 Practice Commands
-    ↓
-Hands-on Practice
-    ↓
+      │
+      ▼
 Document Learning
-    ↓
-Commit Changes
-    ↓
+      │
+      ▼
+Git Commit
+      │
+      ▼
 Push Branch
-    ↓
+      │
+      ▼
 Create Pull Request
-    ↓
+      │
+      ▼
+Review by PathNex
+      │
+      ▼
 Merge
 ```
 
 ---
 
-# 📌 Daily Routine
+# 📌 Daily Workflow
 
-- Attend PathNex class
-- Practice on Linux/EC2
-- Document learning
-- Update GitHub
-- Create Pull Request
-- Revise previous topics
+- Attend live PathNex class.
+- Perform hands-on practice.
+- Document concepts and commands.
+- Update GitHub repository.
+- Create Pull Request.
+- Receive mentor review.
+- Continue learning consistently.
 
 ---
 
@@ -209,7 +180,7 @@ Merge
 
 **Mirza Mehedi Abbas**
 
-Computer Science Engineer | Aspiring DevOps Engineer
+Computer Science Engineer | DevOps Learner | Software Engineer
 
 - 🌐 GitHub: https://github.com/mmabbas786
 - 💼 LinkedIn: https://www.linkedin.com/in/mirzamehediabbas/
@@ -218,15 +189,14 @@ Computer Science Engineer | Aspiring DevOps Engineer
 
 # ⭐ Acknowledgement
 
-Special thanks to the **PathNex Team** for the structured DevOps training, mentorship, and hands-on learning.
+Special thanks to the **PathNex Team** for providing structured DevOps training, practical sessions, and mentorship throughout this learning journey.
 
 ---
 
 <div align="center">
 
-## 🚀 Learn • Practice • Document • Improve • Repeat
+### ⭐ Consistency beats intensity.
 
-⭐ Thanks for visiting my repository!
+**Learning • Building • Documenting • Improving**
 
 </div>
-
