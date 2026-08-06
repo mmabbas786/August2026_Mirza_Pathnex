@@ -1,0 +1,117 @@
+--------------------------------------------------------
+LEARNING TIMINGS
+Day 06 | 06-Aug-2026
+Topic: Git & GitHub Complete Course 2026
+--------------------------------------------------------
+
+# What I Did Today
+
+- Attended the PathNex Git & GitHub Complete Course.
+- Understood the fundamentals of Version Control Systems (VCS).
+- Learned the difference between Git and GitHub.
+- Configured Git for the first time using global username and email.
+- Learned how to initialize, clone, and manage Git repositories.
+- Practiced Git branching and branch management.
+- Understood staging, committing, pushing, and pulling changes.
+- Learned the complete Pull Request (PR) workflow used in companies.
+- Understood merge conflicts and their resolution process.
+- Learned Git best practices followed in real-world software development.
+- Practiced Git commands on the local system and GitHub.
+- Updated GitHub repository with today's learning.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+Today's session focused on Git and GitHub, which are essential tools for version control and collaborative software development.
+
+I learned how Git tracks project history, how GitHub hosts repositories, and how developers work on separate branches before merging their changes through Pull Requests.
+
+I also understood the importance of meaningful commit messages, branch protection, merge conflict resolution, and SSH authentication for secure communication with GitHub. :contentReference[oaicite:0]{index=0}
+
+--------------------------------------------------------
+
+# Practice Completed
+
+✔ Installed and configured Git.
+
+✔ Created and initialized Git repositories.
+
+✔ Practiced Git branching.
+
+✔ Practiced commits and repository history.
+
+✔ Learned remote repository workflow.
+
+✔ Understood Pull Request workflow.
+
+✔ Learned merge conflict resolution.
+
+✔ Practiced GitHub collaboration workflow.
+
+✔ Updated GitHub repository.
+
+--------------------------------------------------------
+
+# Learning Time Breakdown
+
+Git & GitHub Complete Course
+
+Duration :
+03 Hours 10 Minutes
+
+----------------------------------------
+
+Hands-on Practice
+
+Duration :
+01 Hour 40 Minutes
+
+----------------------------------------
+
+Documentation & GitHub Update
+
+Duration :
+40 Minutes
+
+--------------------------------------------------------
+
+# Total Learning Time
+
+05 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Today's Achievements
+
+✓ Learned Git fundamentals.
+
+✓ Understood Version Control workflow.
+
+✓ Practiced Git commands.
+
+✓ Learned GitHub collaboration.
+
+✓ Understood Pull Requests.
+
+✓ Learned merge conflict resolution.
+
+✓ Completed GitHub documentation.
+
+--------------------------------------------------------
+
+# Tomorrow's Plan
+
+- Practice Git commands without referring to notes.
+- Create multiple branches and merge them.
+- Resolve sample merge conflicts.
+- Continue hands-on GitHub practice.
+- Update GitHub with Day 07 progress.
+
+--------------------------------------------------------
+
+# Personal Reflection
+
+Git is one of the most important tools for every Software Engineer and DevOps Engineer. Today's session helped me understand how teams collaborate safely using branches, Pull Requests, and version control. Regular hands-on practice will help me become more confident with Git workflows.
+
+--------------------------------------------------------

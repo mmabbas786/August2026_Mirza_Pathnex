@@ -1,0 +1,117 @@
+--------------------------------------------------------
+LEARNING TIMINGS
+Day 05 | 05-Aug-2026
+Topic: Linux Process Management, Terraform & Bash Scripting
+--------------------------------------------------------
+
+# What I Did Today
+
+- Attended the PathNex Linux Class 4 session.
+- Learned Infrastructure as Code (IaC) using Terraform.
+- Practiced Linux process management commands.
+- Learned system monitoring and networking troubleshooting.
+- Understood Linux Runlevels and important system configuration files.
+- Learned how Cron Jobs automate repetitive tasks.
+- Completed the Bash Scripting session.
+- Practiced variables, positional parameters, loops, conditions, and redirection.
+- Performed hands-on practice on the AWS EC2 instance.
+- Updated GitHub with today's progress.
+
+--------------------------------------------------------
+
+# What I Learned Today
+
+Today's learning focused on Linux administration and automation.
+
+I learned how Terraform provisions cloud infrastructure, how Linux manages processes, how to monitor system resources, and how to troubleshoot network connectivity.
+
+I also learned the fundamentals of Bash scripting, including variables, conditional statements, loops, shell variables, input/output redirection, and automation using Cron Jobs.
+
+--------------------------------------------------------
+
+# Practice Completed
+
+✔ Terraform workflow understood.
+
+✔ Linux process management practiced.
+
+✔ grep commands practiced.
+
+✔ Networking commands executed.
+
+✔ Bash scripting fundamentals completed.
+
+✔ Cron Job concepts understood.
+
+✔ EC2 hands-on practice completed.
+
+✔ GitHub updated.
+
+--------------------------------------------------------
+
+# Learning Time Breakdown
+
+Linux Class 4
+(Terraform, Process Management, Networking, Cron)
+
+Duration :
+03 Hours 00 Minutes
+
+----------------------------------------
+
+Bash Scripting Session
+
+Duration :
+02 Hours 00 Minutes
+
+----------------------------------------
+
+Hands-on Practice on EC2
+
+Duration :
+01 Hour 30 Minutes
+
+----------------------------------------
+
+Documentation & GitHub Update
+
+Duration :
+30 Minutes
+
+--------------------------------------------------------
+
+# Total Learning Time
+
+07 Hours 00 Minutes
+
+--------------------------------------------------------
+
+# Today's Achievements
+
+✓ Learned Infrastructure as Code using Terraform.
+
+✓ Understood Linux process monitoring.
+
+✓ Practiced networking troubleshooting.
+
+✓ Learned Bash scripting fundamentals.
+
+✓ Completed today's GitHub documentation.
+
+--------------------------------------------------------
+
+# Tomorrow's Plan
+
+- Revise today's Linux commands.
+- Practice writing Bash scripts without referring to notes.
+- Create simple automation scripts.
+- Continue EC2 practice.
+- Update GitHub with Day 06 progress.
+
+--------------------------------------------------------
+
+# Personal Reflection
+
+Today's session introduced important concepts used in real DevOps environments. Bash scripting and Linux process management require regular hands-on practice, so I plan to revise the commands and build small scripts to strengthen my understanding.
+
+--------------------------------------------------------
