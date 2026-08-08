@@ -1,0 +1,78 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 07 | 07-Aug-2026
+Topic: AWS Fundamentals & Core AWS Services
+--------------------------------------------------------
+
+# What I Did Today
+
+- Studied the PathNex AWS Complete Course 2026.
+- Started AWS Cloud learning in the DevOps roadmap.
+- Learned AMIs, Golden Images, and EC2.
+- Learned EC2 pricing models: On-Demand, Reserved/Savings Plans, Spot, and Dedicated Hosts.
+- Learned IAM Users, Groups, Roles, Policies, ARNs, MFA, and Least Privilege.
+- Learned VPC, public/private subnets, Internet Gateway, NAT Gateway, VPC Peering, and Transit Gateway.
+- Studied S3 and its storage classes.
+- Reviewed Route 53, CloudTrail, CloudWatch, Session Manager, Lambda, EKS, Auto Scaling, and AWS security services.
+- Reviewed AWS database, storage, analytics, and CI/CD services.
+- Documented today's AWS learning.
+
+--------------------------------------------------------
+
+# Learning Timings
+
+AWS Class / Video Study
+Duration : 02 Hours 20 Minutes
+
+Hands-on / AWS Concept Practice
+Duration : 01 Hour 30 Minutes
+
+Revision & Documentation
+Duration : 00 Hours 40 Minutes
+
+--------------------------------------------------------
+
+# Total Learning Time
+
+04 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Tasks Completed
+
+- [x] EC2 & AMIs
+- [x] EC2 pricing models
+- [x] IAM
+- [x] VPC networking
+- [x] S3
+- [x] AWS monitoring & auditing
+- [x] AWS security services
+- [x] AWS databases
+- [x] AWS CI/CD services
+- [x] GitHub documentation
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- EC2 provides scalable virtual servers.
+- IAM controls access using users, groups, roles, and policies.
+- Least-privilege access should be preferred.
+- VPC provides isolated AWS networking.
+- Public and private subnets separate internet-facing and internal workloads.
+- S3 provides scalable object storage.
+- CloudTrail focuses on AWS API auditing.
+- CloudWatch focuses on monitoring, metrics, logs, and alarms.
+- Session Manager can provide secure EC2 access without opening inbound SSH/RDP.
+- AWS lab resources should be cleaned up to avoid unnecessary charges.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Revise EC2, IAM, VPC, and S3.
+- Practice AWS Console navigation.
+- Continue AWS hands-on work.
+- Study security groups and routing in greater depth.
+
+--------------------------------------------------------

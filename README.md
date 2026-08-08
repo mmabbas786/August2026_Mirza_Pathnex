@@ -76,6 +76,7 @@ August2026_Mirza_Pathnex
 | 04 | 04-Aug-2026 | Linux Fundamentals - Class 3 | ✅ |
 | 05 | 05-Aug-2026 | Linux Process Management, Terraform & Bash Scripting | ✅ |
 | 06 | 06-Aug-2026 | Git & GitHub Complete Course | ✅ |
+| 07 | 07-Aug-2026 | AWS Fundamentals & Core AWS Services | ✅ |
 
 ---
 
@@ -89,6 +90,7 @@ August2026_Mirza_Pathnex
 | Linux Classes | 04 |
 | Bash Sessions | 01 |
 | Git & GitHub Sessions | 01 |
+| AWS Sessions: | 01 |
 
 ---
 

@@ -1,0 +1,710 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 07 | 07-Aug-2026
+Topic: AWS Fundamentals & Core AWS Services
+--------------------------------------------------------
+
+# AWS FUNDAMENTALS
+
+AWS provides cloud services for compute, storage, networking, databases, security, monitoring, analytics, and application delivery.
+
+--------------------------------------------------------
+
+# 1. AMI - Amazon Machine Image
+
+- Image used to launch EC2 instances.
+- Quick Start AMIs
+- My AMIs
+- AWS Marketplace AMIs
+- Community AMIs
+
+Golden Image:
+- General industry term for a standardized master image.
+
+Configured AMI:
+- AWS-specific machine image containing configured OS, patches, security settings, or software.
+
+--------------------------------------------------------
+
+# 2. EC2 - Elastic Compute Cloud
+
+Purpose:
+- Scalable virtual servers in AWS.
+
+Key concepts:
+- vCPU
+- Memory
+- Storage
+- Networking
+- AMIs
+- Auto Scaling
+- EBS
+- VPC
+- Security
+
+EC2 supports Linux, Windows, and custom AMIs.
+
+--------------------------------------------------------
+
+# EC2 PRICING MODELS
+
+On-Demand:
+- Pay-as-you-go.
+- No long-term commitment.
+
+Reserved Instances / Savings Plans:
+- Commitment-based pricing.
+- Useful for predictable workloads.
+
+Spot Instances:
+- Uses available unused capacity.
+- Lower cost.
+- Suitable for fault-tolerant workloads.
+- Can be interrupted.
+
+Dedicated Hosts / Bare Metal:
+- Dedicated physical server.
+- Useful for specific compliance/licensing requirements.
+
+--------------------------------------------------------
+
+# 3. IAM - IDENTITY AND ACCESS MANAGEMENT
+
+Purpose:
+- Securely manage access to AWS resources.
+
+Components:
+
+Users
+- Individual identities.
+
+Groups
+- Collections of users.
+
+Roles
+- Temporary permissions assumed by users, applications, or AWS services.
+
+Policies
+- JSON documents defining permissions.
+
+MFA
+- Additional authentication factor.
+
+--------------------------------------------------------
+
+# PRINCIPLE OF LEAST PRIVILEGE
+
+Give an identity only the permissions required for its task.
+
+Avoid unnecessary permissions such as:
+
+"Action": "*"
+
+when narrower permissions are sufficient.
+
+--------------------------------------------------------
+
+# IAM POLICY STRUCTURE
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3ReadOnlyAccess",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+
+Important elements:
+- Version
+- Statement
+- Sid
+- Effect
+- Action
+- Resource
+
+--------------------------------------------------------
+
+# ARN - AMAZON RESOURCE NAME
+
+Example:
+
+arn:aws:iam::123456789012:user/PathNex
+
+ARN identifies AWS resources.
+
+--------------------------------------------------------
+
+# 4. VPC - VIRTUAL PRIVATE CLOUD
+
+Purpose:
+- Isolated AWS network.
+
+Components:
+- VPC
+- Subnets
+- Route Tables
+- Internet Gateway
+- NAT Gateway
+- Security Groups
+- Network ACLs
+
+--------------------------------------------------------
+
+# PUBLIC SUBNET
+
+Used for resources requiring appropriate internet connectivity.
+
+Examples:
+- Web servers
+- Load balancers
+- NAT Gateway
+
+--------------------------------------------------------
+
+# PRIVATE SUBNET
+
+Used for resources that should not be directly exposed to the public internet.
+
+Examples:
+- Application servers
+- Databases
+- Internal services
+
+--------------------------------------------------------
+
+# INTERNET GATEWAY
+
+- Connects a VPC to the internet.
+- Used with appropriately configured public subnet routing.
+
+--------------------------------------------------------
+
+# NAT GATEWAY
+
+- Usually placed in a public subnet.
+- Allows private subnet resources to initiate outbound internet traffic.
+- Prevents direct inbound internet access to those private resources.
+
+Flow:
+
+Private Subnet
+      |
+      v
+NAT Gateway
+      |
+      v
+Internet Gateway
+      |
+      v
+Internet
+
+--------------------------------------------------------
+
+# VPC PEERING
+
+- Direct connection between two VPCs.
+- Large numbers of VPCs can become difficult to manage as a mesh.
+
+--------------------------------------------------------
+
+# TRANSIT GATEWAY
+
+- Centralized connectivity model.
+- Hub-and-spoke architecture.
+- Useful for connecting many VPCs and networks.
+
+--------------------------------------------------------
+
+# 5. S3 - SIMPLE STORAGE SERVICE
+
+Purpose:
+- Scalable object storage.
+
+Key concepts:
+- Buckets
+- Objects
+- Storage classes
+- Versioning
+- Encryption
+- Retention/lifecycle concepts
+
+Storage classes discussed:
+- Standard
+- Infrequent Access
+- Glacier
+- Deep Archive
+
+--------------------------------------------------------
+
+# 6. SESSION MANAGER
+
+- Secure EC2 access without traditional SSH/RDP.
+- No need to open inbound management ports.
+- Supports private subnet access.
+- Provides session logging/auditing.
+- Part of AWS Systems Manager.
+
+--------------------------------------------------------
+
+# 7. ROUTE 53
+
+Purpose:
+- AWS DNS service.
+
+Routing policies:
+- Weighted
+- Latency-based
+- Geolocation
+- Failover
+
+Other features:
+- Domain registration
+- Health checks
+- DNS management
+
+--------------------------------------------------------
+
+# 8. CLOUDTRAIL
+
+Purpose:
+- Records AWS API activity for auditing.
+
+Uses:
+- Track resource changes.
+- Track user/service activity.
+- Security investigations.
+- Compliance.
+
+Logs can be stored in S3 and integrated with CloudWatch.
+
+--------------------------------------------------------
+
+# 9. CLOUDWATCH
+
+Purpose:
+- Monitoring and observability.
+
+Collects:
+- Metrics
+- Logs
+- Events
+
+Features:
+- Alarms
+- Performance monitoring
+- Resource health
+- Centralized log analysis
+- Automated actions
+
+--------------------------------------------------------
+
+# 10. EKS
+
+Purpose:
+- Managed Kubernetes service.
+
+Key points:
+- Containerized applications.
+- Scaling.
+- IAM/VPC integration.
+- CloudWatch integration.
+- CI/CD integration.
+
+--------------------------------------------------------
+
+# 11. AUTO SCALING
+
+- Automatically adjusts resources based on demand.
+- Improves availability and cost efficiency.
+- Works with EC2, ELB, ECS, and Lambda.
+
+--------------------------------------------------------
+
+# 12. LAMBDA
+
+Purpose:
+- Serverless compute.
+
+Key points:
+- No server provisioning.
+- Event-driven execution.
+- Pay for compute usage.
+- Supports Python, Node.js, Java, Go and others.
+
+Common event sources:
+- S3
+- DynamoDB
+- SNS
+- API Gateway
+
+--------------------------------------------------------
+
+# 13. AWS SHIELD
+
+- DDoS protection.
+- Shield Standard provides automatic protection.
+- Shield Advanced provides enhanced protection and visibility.
+- Protects resources including CloudFront, Route 53, and ELB.
+
+--------------------------------------------------------
+
+# 14. AWS WAF
+
+Web Application Firewall.
+
+Protects against:
+- SQL injection
+- Cross-site scripting
+- Bots
+- Malicious web traffic
+
+Integrates with:
+- CloudFront
+- ALB
+- API Gateway
+
+--------------------------------------------------------
+
+# 15. GUARDDUTY
+
+- Threat detection service.
+- Monitors AWS accounts for suspicious activity.
+- Uses threat intelligence and machine learning.
+- Produces actionable findings.
+
+--------------------------------------------------------
+
+# 16. INSPECTOR
+
+- Automated vulnerability management.
+- Scans EC2, container images, and Lambda workloads.
+- Provides severity and remediation guidance.
+
+--------------------------------------------------------
+
+# 17. KMS
+
+AWS Key Management Service.
+
+- Manages encryption keys.
+- Symmetric and asymmetric keys.
+- Key rotation.
+- Fine-grained key permissions.
+- CloudTrail auditing.
+
+Integrates with S3, RDS, and EBS.
+
+--------------------------------------------------------
+
+# 18. SYSTEMS MANAGER (SSM)
+
+- Operational management service.
+- Patch management.
+- Configuration management.
+- Remote management.
+- Software deployment.
+- Automation.
+- Compliance.
+
+--------------------------------------------------------
+
+# 19. RDS
+
+Managed relational database service.
+
+Supports:
+- MySQL
+- PostgreSQL
+- Oracle
+- SQL Server
+- MariaDB
+
+Features:
+- Automated backups
+- Patching
+- Failover
+- Read replicas
+- Multi-AZ
+- Encryption
+- CloudWatch monitoring
+
+--------------------------------------------------------
+
+# 20. AURORA
+
+- High-performance relational database.
+- Compatible with MySQL and PostgreSQL.
+- Automated backups.
+- Self-healing storage.
+- Multi-AZ.
+- Aurora Serverless.
+
+--------------------------------------------------------
+
+# 21. DYNAMODB
+
+Managed NoSQL database.
+
+- Key-value model
+- Document model
+- Low latency
+- Automatic scaling
+- Encryption at rest
+- Lambda/CloudWatch integration
+
+--------------------------------------------------------
+
+# 22. REDSHIFT
+
+Managed data warehouse.
+
+- SQL analytics
+- Columnar storage
+- Parallel query processing
+- Redshift Spectrum
+- S3 integration
+- Encryption
+
+--------------------------------------------------------
+
+# 23. AWS DMS
+
+Database Migration Service.
+
+- Database migration to AWS.
+- Homogeneous and heterogeneous migration.
+- Continuous replication.
+- Minimal downtime.
+- Migration monitoring.
+
+--------------------------------------------------------
+
+# 24. AWS BATCH
+
+- Batch computing at scale.
+- Automatic compute provisioning.
+- Job scheduling.
+- Custom compute environments.
+- S3 integration.
+- Spot support.
+
+--------------------------------------------------------
+
+# 25. AWS GLUE
+
+Managed ETL service.
+
+- Data discovery
+- Crawling
+- Transformation
+- Data preparation
+- Analytics integration
+
+Supports Python and Scala.
+
+--------------------------------------------------------
+
+# 26. AMAZON EFS
+
+- Scalable shared file storage.
+- Shared access from EC2.
+- Automatic scaling.
+- NFS.
+- Encryption.
+- Useful for shared application data and analytics.
+
+--------------------------------------------------------
+
+# 27. ELASTIC BEANSTALK
+
+Platform as a Service.
+
+- Application deployment.
+- Scaling.
+- Monitoring.
+- Simplified application management.
+
+Supports:
+- Java
+- Python
+- Node.js
+- Others
+
+--------------------------------------------------------
+
+# 28. CLOUDFRONT
+
+AWS CDN.
+
+- Global content delivery.
+- Low latency.
+- Edge locations.
+- Static and dynamic content.
+- S3/EC2/Lambda integration.
+- Security and DDoS protection.
+
+--------------------------------------------------------
+
+# 29. AWS SNOWBALL
+
+Physical data transfer solution.
+
+Useful when:
+- Large datasets must be moved.
+- Internet transfer is impractical.
+
+Snowball Edge also provides local compute/storage capabilities.
+
+--------------------------------------------------------
+
+# 30. CODEPIPELINE
+
+CI/CD workflow orchestration.
+
+Typical flow:
+
+Source
+  ↓
+Build
+  ↓
+Test
+  ↓
+Deploy
+
+Integrates with GitHub and other source control systems.
+
+--------------------------------------------------------
+
+# 31. CODEBUILD
+
+Managed build service.
+
+- Compile source.
+- Run tests.
+- Create artifacts.
+- Automatically scale builds.
+
+Supports Java, Node.js, Python, Go and others.
+
+--------------------------------------------------------
+
+# 32. CODEDEPLOY
+
+Automated application deployment.
+
+Deployment strategies:
+- Rolling
+- Blue/Green
+- Canary
+
+Integrates with:
+- EC2
+- Lambda
+- ECS
+
+--------------------------------------------------------
+
+# 33. X-RAY
+
+Distributed tracing service.
+
+Helps:
+- Find performance bottlenecks.
+- Troubleshoot errors.
+- Trace requests.
+- Visualize distributed application paths.
+
+--------------------------------------------------------
+
+# AWS SERVICE CATEGORIES
+
+Compute:
+EC2, Lambda, EKS, Auto Scaling, Elastic Beanstalk, AWS Batch
+
+Storage:
+S3, EFS, Snowball
+
+Networking:
+VPC, Internet Gateway, NAT Gateway, VPC Peering, Transit Gateway, Route 53, CloudFront
+
+Security:
+IAM, Shield, WAF, GuardDuty, Inspector, KMS
+
+Monitoring/Operations:
+CloudWatch, CloudTrail, Systems Manager, X-Ray
+
+Databases:
+RDS, Aurora, DynamoDB, Redshift, DMS
+
+CI/CD:
+CodePipeline, CodeBuild, CodeDeploy
+
+Data/Analytics:
+Glue, Redshift, S3
+
+--------------------------------------------------------
+
+# IMPORTANT INTERVIEW QUESTIONS
+
+- What is AWS?
+- What is EC2?
+- What is an AMI?
+- Golden Image vs AMI?
+- Explain EC2 pricing models.
+- What is IAM?
+- User vs Group vs Role?
+- What is an IAM Policy?
+- What is an ARN?
+- What is MFA?
+- Explain least privilege.
+- What is a VPC?
+- Public vs private subnet?
+- What is an Internet Gateway?
+- What is a NAT Gateway?
+- VPC Peering vs Transit Gateway?
+- What is S3?
+- What is Session Manager?
+- What is Route 53?
+- CloudTrail vs CloudWatch?
+- What is Auto Scaling?
+- What is Lambda?
+- What is EKS?
+- WAF vs Shield?
+- What is GuardDuty?
+- What is Inspector?
+- What is KMS?
+- What is RDS?
+- RDS vs DynamoDB?
+- What is CloudFront?
+- CodePipeline vs CodeBuild vs CodeDeploy?
+- What is X-Ray?
+
+--------------------------------------------------------
+
+# KEY DEVOPS TAKEAWAYS
+
+- Follow least privilege with IAM.
+- Separate public and private workloads.
+- Use NAT Gateway for private-subnet outbound internet access.
+- Use CloudTrail for API auditing.
+- Use CloudWatch for monitoring, logs, metrics, and alarms.
+- Use CloudFront for global content delivery.
+- Use Auto Scaling for changing workloads.
+- Use CodePipeline, CodeBuild, and CodeDeploy for CI/CD workflows.
+- Use Session Manager for secure EC2 management.
+- Clean up AWS lab resources to avoid unnecessary billing.
+
+--------------------------------------------------------
+
+# SOURCE NOTES
+
+Today's notes were based on the PathNex AWS Complete Course 2026 material and the provided PathNex AWS notes PDF. The PDF covers 32 AWS services across compute, networking, storage, security, monitoring, databases, analytics, and CI/CD. fileciteturn4file0L5-L27 fileciteturn4file0L70-L101 fileciteturn4file0L151-L174 fileciteturn4file0L256-L310
+
+--------------------------------------------------------
