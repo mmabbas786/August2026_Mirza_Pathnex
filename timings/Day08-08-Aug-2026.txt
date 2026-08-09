@@ -1,0 +1,89 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 08 | 08-Aug-2026
+Topic: AWS Fundamentals - Class 2
+--------------------------------------------------------
+
+# What I Did Today
+
+- Continued AWS learning with PathNex AWS Complete Course 2026 - Class 2.
+- Learned AWS Landing Zone and AWS Control Tower.
+- Understood multi-account AWS architecture, Organizations, OUs, Account Factory, Guardrails and SCPs.
+- Learned S3 Versioning and Delete Markers.
+- Learned AWS Systems Manager Session Manager and SSM Agent prerequisites.
+- Studied Route 53 hosted zones, DNS records and routing policies.
+- Learned CloudFront, CDN, Edge Locations, Cache Hit and Cache Miss.
+- Learned cloud resource tagging best practices.
+- Understood Dev, QA, UAT, Staging/Beta and Production environments.
+- Revised CloudTrail and CloudWatch.
+- Learned Auto Scaling minimum, desired and maximum capacity.
+- Studied Lambda triggers, billing and execution limits.
+- Documented today's learning in GitHub.
+
+--------------------------------------------------------
+
+# Learning Timings
+
+AWS Class 2 / Video Study
+Duration : 03 Hours 30 Minutes
+
+Hands-on / AWS Concept Practice
+Duration : 01 Hour 30 Minutes
+
+Revision & Documentation
+Duration : 00 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Total Learning Time
+05 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Tasks Completed
+
+- [x] AWS Landing Zone
+- [x] AWS Control Tower
+- [x] AWS Organizations and OUs
+- [x] Account Factory
+- [x] Preventive & Detective Guardrails
+- [x] Service Control Policies
+- [x] S3 Versioning & Delete Marker
+- [x] Session Manager & SSM Agent
+- [x] Route 53 & DNS
+- [x] CloudFront & CDN
+- [x] AWS tagging
+- [x] Deployment environments
+- [x] CloudTrail & CloudWatch
+- [x] Auto Scaling
+- [x] Lambda
+- [x] GitHub documentation
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- Landing Zone provides a structured multi-account AWS foundation.
+- Control Tower helps automate and govern the Landing Zone.
+- SCPs restrict maximum permissions across AWS accounts.
+- S3 Versioning helps recover from accidental overwrites and deletions.
+- Session Manager provides secure EC2 access without requiring inbound SSH port 22 or a public IP.
+- Route 53 provides DNS and traffic-routing capabilities.
+- CloudFront uses edge locations to deliver content closer to users.
+- Tags help identify ownership, environment and temporary resources.
+- CloudTrail focuses on AWS API auditing.
+- CloudWatch focuses on monitoring, metrics, logs and alarms.
+- Auto Scaling uses minimum, desired and maximum capacity.
+- Lambda is event-driven and has a maximum execution limit.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Revise AWS Class 1 and Class 2.
+- Practice IAM, VPC, S3, Route 53, CloudWatch and Auto Scaling.
+- Continue AWS hands-on practice.
+- Connect AWS services into complete application architectures.
+- Continue GitHub documentation.
+
+--------------------------------------------------------
