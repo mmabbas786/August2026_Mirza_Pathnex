@@ -1,0 +1,101 @@
+--------------------------------------------------------
+PATHNEX DAILY UPDATE
+Day 09 | 09-Aug-2026
+Topic: AWS Security, Messaging & Databases - Class 3
+--------------------------------------------------------
+
+# What I Did Today
+
+- Continued AWS learning with PathNex AWS Complete Course 2026 - Class 3.
+- Studied AWS security services and how they are used in real-world environments.
+- Learned AWS Shield and DDoS protection.
+- Learned AWS WAF and common web attacks such as XSS and SQL Injection.
+- Studied GuardDuty and Inspector.
+- Learned CVE and CVSS and how vulnerabilities can be prioritized.
+- Compared Amazon Macie and AWS Config.
+- Learned EventBridge, Step Functions, SNS and SQS.
+- Studied AWS KMS and encryption key types.
+- Continued AWS Systems Manager and learned Patch Manager and Parameter Store.
+- Learned SQL vs NoSQL databases.
+- Practiced basic SQL commands and PostgreSQL CLI commands.
+- Studied Amazon RDS, Aurora and DynamoDB.
+- Documented today's AWS learning and interview points.
+
+--------------------------------------------------------
+
+# Learning Timings
+
+AWS Class 3 / Video Study
+Duration : 03 Hours 30 Minutes
+
+Hands-on / SQL & AWS Practice
+Duration : 01 Hour 30 Minutes
+
+Revision & Documentation
+Duration : 00 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Total Learning Time
+
+05 Hours 30 Minutes
+
+--------------------------------------------------------
+
+# Tasks Completed
+
+- [x] AWS Shield
+- [x] AWS WAF
+- [x] XSS vs SQL Injection
+- [x] GuardDuty
+- [x] Inspector
+- [x] CVE & CVSS
+- [x] Macie vs AWS Config
+- [x] EventBridge
+- [x] Step Functions
+- [x] SNS & SQS
+- [x] AWS KMS
+- [x] Systems Manager
+- [x] Patch Manager
+- [x] Parameter Store
+- [x] SQL vs NoSQL
+- [x] SQL commands
+- [x] PostgreSQL CLI
+- [x] RDS
+- [x] Aurora
+- [x] DynamoDB
+- [x] GitHub documentation
+
+--------------------------------------------------------
+
+# Key Takeaways
+
+- Shield protects against DDoS attacks.
+- WAF protects web applications and APIs against common Layer 7 attacks.
+- XSS targets the client/browser while SQL Injection targets the database through unsafe application input.
+- GuardDuty detects suspicious activity but is primarily a detection service.
+- Inspector identifies vulnerabilities in supported AWS workloads.
+- CVE identifies a known vulnerability while CVSS provides a severity score.
+- When vulnerabilities have similar severity, business and customer impact can help decide priority.
+- EventBridge routes events between services and applications.
+- SNS is mainly used for publish/subscribe notifications.
+- SQS provides a queue for asynchronous communication and decoupling.
+- KMS manages cryptographic keys used for encryption.
+- Systems Manager provides centralized operational management.
+- SQL databases use structured tables and predefined schemas.
+- NoSQL databases provide flexible data models and are designed for large-scale distributed workloads.
+- RDS provides managed relational databases, while DynamoDB is a managed NoSQL service.
+- Aurora is an AWS relational database engine compatible with MySQL and PostgreSQL.
+
+--------------------------------------------------------
+
+# Tomorrow's Task
+
+- Revise AWS security services.
+- Revise SQL vs NoSQL.
+- Practice the SQL commands learned today.
+- Compare RDS, Aurora and DynamoDB.
+- Continue AWS hands-on practice.
+- Continue GitHub documentation.
+
+--------------------------------------------------------

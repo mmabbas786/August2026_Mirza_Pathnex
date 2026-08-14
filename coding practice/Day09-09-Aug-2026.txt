@@ -1,0 +1,633 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 09 | 09-Aug-2026
+Topic: AWS Security, Messaging & Databases - Class 3
+--------------------------------------------------------
+
+# 1. AWS SHIELD
+
+Purpose:
+- Managed DDoS protection service.
+
+## Shield Standard
+- Automatically enabled for AWS customers.
+- Provides basic DDoS protection.
+
+## Shield Advanced
+- Paid advanced protection tier.
+- Provides enhanced visibility and DDoS response support.
+
+Shield protects customer-facing entry points such as:
+- CloudFront
+- Route 53
+- AWS WAF
+- Elastic Load Balancers
+
+--------------------------------------------------------
+
+# 2. AWS WAF
+
+WAF = Web Application Firewall.
+
+Purpose:
+- Protects web applications and APIs.
+- Works at Layer 7.
+- Uses rules to identify and block malicious web traffic.
+
+Integrations:
+- CloudFront
+- Application Load Balancer
+- API Gateway
+- AppSync
+
+--------------------------------------------------------
+
+# XSS - CROSS-SITE SCRIPTING
+
+Target:
+- Client browser / front end.
+
+Attack:
+- Malicious JavaScript or HTML is injected into application input.
+
+Possible impact:
+- Session theft.
+- UI manipulation.
+- Credential theft.
+
+Prevention:
+- Output encoding.
+- Input escaping.
+- Content Security Policy (CSP).
+
+--------------------------------------------------------
+
+# SQL INJECTION
+
+Target:
+- Application database / back end.
+
+Attack:
+- Malicious SQL is inserted through unsafe application input.
+
+Possible impact:
+- Unauthorized data access.
+- Data modification.
+- Data leakage.
+- Destructive database operations.
+
+Prevention:
+- Parameterized queries.
+- Prepared statements.
+
+--------------------------------------------------------
+
+# XSS VS SQL INJECTION
+
+XSS:
+- Target = Browser
+- Main area = Front end
+- Attack = Script injection
+
+SQL Injection:
+- Target = Database
+- Main area = Back end
+- Attack = SQL injection
+
+Easy shortcut:
+
+XSS -> Browser
+
+SQLi -> Database
+
+--------------------------------------------------------
+
+# 3. AMAZON GUARDDUTY
+
+Purpose:
+- Intelligent threat detection service.
+
+It analyzes signals such as:
+- VPC Flow Logs
+- CloudTrail events
+- DNS logs
+
+Can detect:
+- Suspicious activity.
+- Compromised resources.
+- Unauthorized behavior.
+- Possible data exfiltration.
+
+Important:
+- GuardDuty primarily detects and reports threats.
+- Automated response can be connected through other AWS services.
+
+--------------------------------------------------------
+
+# 4. AMAZON INSPECTOR
+
+Purpose:
+- Automated vulnerability management.
+
+Scans:
+- EC2 instances
+- ECR container images
+- Lambda functions
+
+Uses known vulnerability information such as CVEs.
+
+--------------------------------------------------------
+
+# CVE
+
+CVE = Common Vulnerabilities and Exposures.
+
+Purpose:
+- Standardized identifier for a known vulnerability.
+
+Example:
+
+CVE-2024-XXXX
+
+Think:
+
+CVE = Vulnerability's ID/name.
+
+--------------------------------------------------------
+
+# CVSS
+
+CVSS = Common Vulnerability Scoring System.
+
+Purpose:
+- Gives a severity score to a vulnerability.
+
+Range:
+
+0.0 -> 10.0
+
+According to the class material:
+
+9.0 - 10.0 = Critical
+
+Easy shortcut:
+
+CVE = WHAT vulnerability?
+
+CVSS = HOW SEVERE?
+
+--------------------------------------------------------
+
+# VULNERABILITY PRIORITIZATION
+
+If two vulnerabilities have the same or similar CVSS score:
+
+1. Look at business impact.
+2. Look at customer impact.
+3. Consider whether the affected asset is production/customer-facing.
+4. Prioritize the more critical business asset.
+
+--------------------------------------------------------
+
+# 5. AMAZON MACIE VS AWS CONFIG
+
+Amazon Macie:
+- Focuses on S3 data security and privacy.
+- Finds sensitive data such as PII and financial information.
+
+AWS Config:
+- Focuses on resource configuration and compliance.
+- Tracks configuration changes.
+- Evaluates resources against compliance rules.
+
+Easy shortcut:
+
+Macie -> DATA
+
+Config -> CONFIGURATION
+
+--------------------------------------------------------
+
+# 6. AMAZON EVENTBRIDGE
+
+Purpose:
+- Event bus and event router.
+
+Receives events from:
+- AWS services
+- Applications
+- SaaS applications
+
+Routes events to targets such as:
+- Lambda
+- SNS
+- SQS
+
+Basic flow:
+
+Event Source
+     |
+     v
+EventBridge
+     |
+     +--> Lambda
+     +--> SNS
+     +--> SQS
+
+--------------------------------------------------------
+
+# 7. AWS STEP FUNCTIONS
+
+Purpose:
+- Orchestrates multi-step workflows.
+
+Useful when:
+- Multiple tasks must execute in a controlled sequence.
+- Different AWS services need to work together.
+
+Example:
+
+Task 1
+  |
+  v
+Task 2
+  |
+  v
+Task 3
+  |
+  v
+Task 4
+
+--------------------------------------------------------
+
+# 8. AMAZON SNS
+
+SNS = Simple Notification Service.
+
+Purpose:
+- Publish/Subscribe messaging.
+- One-to-many notifications.
+
+Can send notifications through:
+- Email
+- SMS
+- HTTP endpoints
+- Other subscribers
+
+Example:
+
+Publisher
+    |
+    v
+   SNS
+  / |  /  |  Email SMS HTTP
+
+--------------------------------------------------------
+
+# 9. AMAZON SQS
+
+SQS = Simple Queue Service.
+
+Purpose:
+- Message queue.
+- Decouples application components.
+- Supports asynchronous communication.
+
+Example:
+
+Application A
+     |
+     v
+    SQS
+     |
+     v
+Application B
+
+Application A does not need to directly wait for Application B.
+
+--------------------------------------------------------
+
+# SNS VS SQS
+
+SNS:
+- Publish/Subscribe.
+- Push-style notification.
+- One-to-many.
+
+SQS:
+- Queue.
+- Consumers process messages from the queue.
+- Used for decoupling and asynchronous processing.
+
+Easy shortcut:
+
+SNS -> Send notifications
+
+SQS -> Store messages in a queue
+
+--------------------------------------------------------
+
+# 10. AWS KMS
+
+KMS = Key Management Service.
+
+Purpose:
+- Create, store and control cryptographic keys.
+- Used by AWS services for encryption.
+
+Common integrations:
+- S3
+- EBS
+- RDS
+- DynamoDB
+
+Key features:
+- Key policies.
+- Key rotation.
+- CloudTrail auditing.
+
+--------------------------------------------------------
+
+# KMS KEY TYPES
+
+## Symmetric Key
+
+Same key is used for:
+- Encryption
+- Decryption
+
+## Asymmetric Key
+
+Uses:
+- Public key
+- Private key
+
+--------------------------------------------------------
+
+# 11. AWS SYSTEMS MANAGER
+
+Systems Manager is a centralized operational management service.
+
+Important features:
+
+## Session Manager
+- Secure shell access.
+- No need to open port 22/3389.
+- Bastionless access.
+
+## Patch Manager
+- Helps automate operating system patch management.
+
+## Parameter Store
+- Centralized storage for configuration parameters and secrets.
+
+--------------------------------------------------------
+
+# 12. SQL VS NOSQL
+
+## SQL / RELATIONAL
+
+Data structure:
+- Tables
+- Rows
+- Columns
+
+Schema:
+- Fixed / predefined.
+
+Scaling:
+- Traditionally emphasizes vertical scaling.
+
+AWS examples:
+- RDS
+- Aurora
+
+Examples of relational engines:
+- MySQL
+- PostgreSQL
+- Oracle
+- MariaDB
+- SQL Server
+
+--------------------------------------------------------
+
+# NOSQL / NON-RELATIONAL
+
+Data models:
+- Key-value
+- Documents
+
+Schema:
+- Flexible.
+
+Scaling:
+- Designed for horizontal scale-out.
+
+AWS example:
+- DynamoDB
+
+Other NoSQL examples:
+- MongoDB
+- Cassandra
+
+--------------------------------------------------------
+
+# SQL VS NOSQL - EASY COMPARISON
+
+SQL:
+- Tables
+- Fixed schema
+- Relationships
+- Strong structure
+
+NoSQL:
+- Key-value/documents
+- Flexible schema
+- Large distributed workloads
+- Horizontal scaling
+
+--------------------------------------------------------
+
+# 13. SQL COMMANDS
+
+## Create Database
+
+CREATE DATABASE production_db;
+
+## Create Table
+
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    city VARCHAR(50),
+    age INT
+);
+
+## Insert Data
+
+INSERT INTO users (user_id, name, city, age)
+VALUES (1, 'Rahul', 'Delhi', 25);
+
+## Select / Retrieve Data
+
+SELECT * FROM users
+WHERE city = 'Delhi';
+
+## Update Data
+
+UPDATE users
+SET age = 26
+WHERE user_id = 1;
+
+## Delete Record
+
+DELETE FROM users
+WHERE user_id = 1;
+
+## Alter Table
+
+ALTER TABLE users
+ADD COLUMN email VARCHAR(100);
+
+## Drop Table
+
+DROP TABLE users;
+
+--------------------------------------------------------
+
+# 14. POSTGRESQL CLI - PSQL
+
+## Connect
+
+psql -U postgres -d production_db
+
+## List Databases
+
+\l
+
+## List Tables
+
+\dt
+
+## Exit
+
+\q
+
+--------------------------------------------------------
+
+# 15. AMAZON RDS
+
+RDS = Relational Database Service.
+
+Managed relational database service.
+
+Supported engines discussed:
+- MySQL
+- PostgreSQL
+- Oracle
+- SQL Server
+- MariaDB
+
+Features:
+- Automated backups.
+- Multi-AZ failover.
+- Read replicas.
+- Managed database operations.
+
+--------------------------------------------------------
+
+# 16. AMAZON AURORA
+
+AWS relational database engine compatible with:
+- MySQL
+- PostgreSQL
+
+Features discussed:
+- High performance.
+- Aurora Serverless.
+- Multi-region replication.
+
+The class material presents performance comparisons against standard MySQL/PostgreSQL.
+
+--------------------------------------------------------
+
+# 17. AMAZON DYNAMODB
+
+Managed NoSQL database.
+
+Data models:
+- Key-value
+- Document
+
+Key characteristics:
+- Single-digit millisecond latency at scale.
+- Managed service.
+- Automatic scaling capabilities.
+
+--------------------------------------------------------
+
+# IMPORTANT INTERVIEW QUESTIONS
+
+1. What is AWS Shield?
+2. Shield Standard vs Shield Advanced?
+3. What is AWS WAF?
+4. What is XSS?
+5. What is SQL Injection?
+6. XSS vs SQL Injection?
+7. How can SQL Injection be prevented?
+8. What is GuardDuty?
+9. Does GuardDuty directly block attackers?
+10. What is Amazon Inspector?
+11. What is a CVE?
+12. What is CVSS?
+13. CVE vs CVSS?
+14. How would you prioritize two vulnerabilities with similar CVSS scores?
+15. Macie vs AWS Config?
+16. What is EventBridge?
+17. EventBridge vs SNS?
+18. SNS vs SQS?
+19. What is SQS?
+20. What is Step Functions?
+21. What is AWS KMS?
+22. Symmetric vs Asymmetric encryption?
+23. What is Systems Manager?
+24. What is Patch Manager?
+25. What is Parameter Store?
+26. SQL vs NoSQL?
+27. RDS vs DynamoDB?
+28. What is Aurora?
+29. What does SELECT do?
+30. What does UPDATE do?
+31. What does DELETE do?
+32. What does ALTER TABLE do?
+33. What does DROP TABLE do?
+34. What does \dt do in PostgreSQL?
+35. What does \l do in PostgreSQL?
+
+--------------------------------------------------------
+
+# KEY DEVOPS TAKEAWAYS
+
+- Security is not only about blocking attacks; detection, monitoring, vulnerability management and response are also important.
+- WAF protects web applications while Shield focuses on DDoS protection.
+- GuardDuty detects suspicious behavior.
+- Inspector focuses on vulnerabilities.
+- CVE identifies a vulnerability; CVSS measures its severity.
+- Business impact matters when prioritizing vulnerabilities.
+- EventBridge routes events.
+- SNS broadcasts notifications.
+- SQS decouples services through queues.
+- Step Functions coordinates multi-step workflows.
+- KMS manages encryption keys.
+- Systems Manager provides centralized infrastructure operations.
+- SQL databases use structured tables and predefined schemas.
+- NoSQL databases use flexible data models and are designed for distributed scale.
+- RDS/Aurora are relational; DynamoDB is NoSQL.
+
+--------------------------------------------------------
+
+# SOURCE
+
+Based on the provided PathNex AWS Complete Course 2026 - Class 3 material.
+
+--------------------------------------------------------
