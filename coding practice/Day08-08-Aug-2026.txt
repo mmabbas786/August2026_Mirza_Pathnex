@@ -1,0 +1,432 @@
+--------------------------------------------------------
+CODING PRACTICE
+Day 08 | 08-Aug-2026
+Topic: AWS Fundamentals - Class 2
+--------------------------------------------------------
+
+# 1. AWS LANDING ZONE
+
+AWS Landing Zone is a well-architected multi-account AWS baseline environment.
+
+Purpose:
+- Creates a secure and organized foundation.
+- Separates environments and responsibilities into different AWS accounts.
+
+Example:
+
+AWS Organization
+|
++-- Security Account
++-- Finance Account
++-- Development Account
++-- QA Account
++-- Production Account
+
+--------------------------------------------------------
+
+# 2. AWS CONTROL TOWER
+
+Control Tower helps set up, govern and monitor a multi-account Landing Zone.
+
+## Account Factory
+- Automates creation and provisioning of AWS accounts.
+- Uses approved configurations.
+
+## Guardrails
+
+Preventive Guardrails:
+- Stop unauthorized actions before they happen.
+
+Detective Guardrails:
+- Detect and report non-compliant activity.
+
+## Service Control Policies - SCPs
+
+- Centralized permission boundaries at the AWS Organizations level.
+- Restrict the maximum actions accounts can perform.
+
+Hierarchy:
+
+Control Tower
+      |
+Landing Zone
+      |
+AWS Organizations
+      |
+Organizational Units
+      |
+AWS Accounts
+
+--------------------------------------------------------
+
+# 3. S3 VERSIONING
+
+S3 Versioning keeps multiple versions of objects.
+
+Purpose:
+- Protect against accidental overwrites.
+- Recover accidentally deleted objects.
+- Maintain object history.
+
+## DELETE MARKER
+
+When an object is deleted from a version-enabled bucket:
+- S3 creates a Delete Marker.
+- The Delete Marker is 0 KB.
+- The object disappears from the normal view.
+- Previous versions still exist.
+
+Restore:
+1. Show object versions.
+2. Find the Delete Marker.
+3. Delete the Delete Marker.
+4. The previous object becomes visible.
+
+Permanent deletion requires deleting the specific object version.
+
+--------------------------------------------------------
+
+# 4. AWS SYSTEMS MANAGER - SESSION MANAGER
+
+Provides secure EC2 access.
+
+Advantages:
+- No SSH key required for the session.
+- No need to open inbound port 22.
+- No public IP required.
+- Can access private EC2 instances.
+- Provides session logging.
+
+## SSM PREREQUISITES
+
+- SSM Agent installed and running.
+- Appropriate IAM role/permissions.
+- Required network connectivity.
+
+## Commands
+
+Amazon Linux / RHEL / CentOS:
+
+sudo systemctl status amazon-ssm-agent
+
+Ubuntu using Snap:
+
+sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service
+
+--------------------------------------------------------
+
+# 5. ROUTE 53
+
+Route 53 is AWS DNS and traffic management service.
+
+## Hosted Zones
+
+Public Hosted Zone:
+- Routes internet DNS traffic.
+
+Private Hosted Zone:
+- Routes internal DNS traffic inside a VPC.
+
+## Default Records
+
+NS:
+- Authoritative name servers.
+
+SOA:
+- Zone administrative information.
+
+## DNS Records
+
+A:
+- IPv4 address.
+
+AAAA:
+- IPv6 address.
+
+CNAME:
+- Alias to another canonical domain.
+
+MX:
+- Mail server routing.
+
+TXT:
+- Text records such as SPF, DKIM and verification.
+
+Alias:
+- AWS-specific mapping to AWS resources such as ALB, S3 and CloudFront.
+
+--------------------------------------------------------
+
+# ROUTE 53 ROUTING POLICIES
+
+Simple:
+- Direct routing to one resource.
+
+Weighted:
+- Traffic distributed using weights.
+- Example: 70% / 30%.
+
+Latency-Based:
+- Sends users to the region with lowest network latency.
+
+Failover:
+- Primary endpoint with backup endpoint.
+
+Geolocation:
+- Routes based on user location.
+
+Geoproximity:
+- Routes based on physical locations with optional bias.
+
+Multi-Value Answer:
+- Returns multiple healthy IP addresses.
+
+--------------------------------------------------------
+
+# 6. CLOUDFRONT
+
+CloudFront is AWS's global CDN.
+
+Purpose:
+- Deliver content closer to users.
+- Reduce latency.
+
+## Edge Locations
+
+CloudFront caches content at edge locations.
+
+Flow:
+
+User
+ |
+CloudFront Edge Location
+ |
+ +-- Cache Hit -> Cached Content
+ |
+ +-- Cache Miss -> Origin
+                     |
+                  S3 / ALB
+
+Cache Hit:
+- Content already exists at the edge.
+
+Cache Miss:
+- CloudFront retrieves content from the origin.
+
+--------------------------------------------------------
+
+# 7. CLOUD RESOURCE TAGGING
+
+Important tags:
+
+1. Application Name
+2. Application Team
+3. Owner
+4. Environment
+5. To-Be-Deleted
+
+Example:
+
+Application Name = Payment-App
+Application Team = Backend
+Owner = Mirza
+Environment = Dev
+To-Be-Deleted = Yes
+
+The To-Be-Deleted tag is useful for temporary resources and cost management.
+
+--------------------------------------------------------
+
+# 8. DEPLOYMENT ENVIRONMENTS
+
+Dev:
+- Developer sandbox.
+
+QA:
+- Quality assurance testing.
+
+UAT:
+- User Acceptance Testing.
+
+Staging / Beta:
+- Pre-production testing.
+
+Prod:
+- Live user-facing environment.
+
+Flow:
+
+Dev -> QA -> UAT -> Staging -> Prod
+
+--------------------------------------------------------
+
+# 9. CLOUDTRAIL
+
+Purpose:
+- Logs and audits AWS API calls and user actions.
+
+Can identify:
+- Who performed an action.
+- What action was performed.
+- What resource was affected.
+- When it happened.
+- Source IP address.
+
+Logs can be available through:
+- CloudTrail Event History
+- S3
+- CloudWatch Logs
+
+--------------------------------------------------------
+
+# 10. CLOUDWATCH
+
+Purpose:
+- Monitoring and observability.
+
+Can collect:
+- CPU utilization
+- Disk I/O
+- Network traffic
+- Logs
+- Application/system information
+
+CloudWatch Agent:
+- Collects system-level and custom application logs/metrics from EC2.
+
+CloudWatch Alarm:
+- Triggers actions when conditions are reached.
+
+Example:
+
+CPU > 80%
+     |
+CloudWatch Alarm
+     |
+     +--> Auto Scaling
+     +--> Lambda
+     +--> Notification
+
+Easy shortcut:
+
+CloudTrail = WHO DID WHAT?
+CloudWatch = HOW IS THE SYSTEM DOING?
+
+--------------------------------------------------------
+
+# 11. AWS AUTO SCALING
+
+Automatically adjusts EC2 capacity according to demand.
+
+Minimum Size:
+- Lowest number of instances.
+
+Desired Capacity:
+- Normal target number.
+
+Maximum Size:
+- Highest number allowed.
+
+Formula:
+
+Minimum Capacity <= Desired Capacity <= Maximum Capacity
+
+Example:
+
+Minimum = 2
+Desired = 3
+Maximum = 6
+
+--------------------------------------------------------
+
+# 12. AWS LAMBDA
+
+Lambda is event-driven serverless compute.
+
+Common triggers:
+- S3 uploads
+- DynamoDB Streams
+- API Gateway requests
+- CloudWatch alarm state changes
+
+Billing:
+- Based on execution duration and allocated memory.
+
+According to the class material:
+
+Minimum execution/billing unit:
+- 1 second
+- 1 ms resolution
+
+Default timeout:
+- 3 seconds
+
+Maximum execution time:
+- 15 minutes / 900 seconds
+
+For workloads longer than 15 minutes, the class recommends:
+- ECS
+- Fargate
+- AWS Batch
+- Step Functions
+
+--------------------------------------------------------
+
+# IMPORTANT INTERVIEW QUESTIONS
+
+1. What is AWS Landing Zone?
+2. What is AWS Control Tower?
+3. What is Account Factory?
+4. Preventive vs Detective Guardrails?
+5. What are SCPs?
+6. Explain multi-account AWS architecture.
+7. What is S3 Versioning?
+8. What is a Delete Marker?
+9. How do you restore a deleted versioned S3 object?
+10. What is Session Manager?
+11. What is SSM Agent?
+12. Why use Session Manager instead of opening SSH?
+13. What is Route 53?
+14. Public vs Private Hosted Zone?
+15. A vs AAAA record?
+16. CNAME vs Alias?
+17. What are MX and TXT records?
+18. Explain Route 53 routing policies.
+19. What is CloudFront?
+20. What is a CDN?
+21. What is an Edge Location?
+22. Cache Hit vs Cache Miss?
+23. Why are AWS tags important?
+24. Explain Dev, QA, UAT, Staging and Prod.
+25. CloudTrail vs CloudWatch?
+26. What is Auto Scaling?
+27. Minimum vs Desired vs Maximum capacity?
+28. What is Lambda?
+29. What are Lambda triggers?
+30. What is the maximum Lambda execution time?
+31. What can be used for workloads longer than 15 minutes?
+
+--------------------------------------------------------
+
+# KEY DEVOPS TAKEAWAYS
+
+- Use multiple AWS accounts to separate teams and environments.
+- Control Tower provides centralized multi-account governance.
+- SCPs restrict maximum permissions across accounts.
+- S3 Versioning protects against accidental changes and deletions.
+- Session Manager enables secure EC2 management without opening inbound SSH.
+- Route 53 handles DNS and traffic routing.
+- CloudFront reduces latency using edge locations.
+- Tags improve resource management and cost control.
+- CloudTrail is mainly for auditing API activity.
+- CloudWatch is mainly for monitoring metrics, logs and alarms.
+- Auto Scaling adjusts capacity according to demand.
+- Lambda is suitable for event-driven workloads within its execution limits.
+
+--------------------------------------------------------
+
+# SOURCE
+
+Based on the provided PathNex AWS Complete Course 2026 - Class 2 material.
+
+--------------------------------------------------------
